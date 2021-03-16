@@ -1,0 +1,41 @@
+/* pseudo element :root => racine du doc */
+:root {
+    --bg: #d8d7d7;
+    --font: #666666;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: var(--bg);
+    color: var(--font);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    padding: 20px;
+    text-align: center;
+}
+
+.todos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+    .todo {
+        width: 400px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #444444;
+        padding: 5px;
+    }
+    .todo button {
+        height: 30px;
+    }
